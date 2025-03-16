@@ -5,7 +5,7 @@ import AboutMe from './component/AboutMe'
 import Skills from './component/Skills'
 import Projects from './component/Projects'
 import Contact from './component/Contact'
-import Footer from './component/footer'
+import Footer from './component/Footer'
 import CustomCursor from './component/CustomCursor'
 
 import gsap from 'gsap';
