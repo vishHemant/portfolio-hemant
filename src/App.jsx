@@ -121,20 +121,20 @@ const App = () => {
       });
 
     mm.add("(min-width: 991px)", () => {
-      gsap.fromTo('.about .text',
-        { x: -300, y: -50, scale: 4 }, {
-        scale: 1,
-        y: 0,
-        x: 130,
-        delay: .5,
-        scrollTrigger: {
-          trigger: '.about .text',
-          duration: 0.8,
-          start: 'top bottom',
-          end: 'bottom top',
-          scrub: true,
-        }
-      });
+      gsap.from('.about .text',
+        {
+          scale: 1,
+          y: -100,
+          x: 110,
+          delay: .5,
+          scrollTrigger: {
+            trigger: '.about .text',
+            duration: 0.8,
+            start: '50% bottom',
+            end: 'bottom top',
+            scrub: true,
+          }
+        });
     });
 
     mm.add("(min-width: 991px)", () => {
@@ -154,19 +154,19 @@ const App = () => {
       });
     });
     mm.add("(min-width: 991px)", () => {
-      gsap.fromTo('.about ul',
-        { x: 200, y: 50, scale: 1.1 }, {
-        scale: 1,
-        y: 0,
-        x: -450,
-        scrollTrigger: {
-          trigger: '.about ul',
-          duration: 0.8,
-          start: 'top bottom',
-          end: 'bottom top',
-          scrub: true,
-        }
-      });
+      gsap.from('.about ul',
+        {
+          scale: 1,
+          y: -10,
+          x: 10,
+          scrollTrigger: {
+            trigger: '.about ul',
+            duration: 0.8,
+            start: '50% bottom',
+            end: 'bottom top',
+            scrub: true,
+          }
+        });
     });
 
 
@@ -251,14 +251,12 @@ const App = () => {
     });
     mm.add("(min-width: 991px)", () => {
       gsap.fromTo('.projects .card:nth-child(1)',
-        { x: -150, rotation: -120 }, {
+        { x: -119 }, {
         x: 72,
-        rotation: 56.5,
-        delay: .5,
         scrollTrigger: {
           trigger: '.projects .card:nth-child(1)',
           duration: 0.8,
-          start: 'top bottom',
+          start: '19% bottom',
           end: 'bottom top',
           scrub: true,
         }
@@ -266,14 +264,25 @@ const App = () => {
     });
     mm.add("(min-width: 991px)", () => {
       gsap.fromTo('.projects .card:nth-child(3)',
-        { x: 150, rotation: 120 }, {
+        { x: 119 }, {
         x: -72,
-        rotation: -56.5,
-        delay: .5,
         scrollTrigger: {
           trigger: '.projects .card:nth-child(3)',
           duration: 0.8,
-          start: 'top bottom',
+          start: '19% bottom',
+          end: 'bottom top',
+          scrub: true,
+        }
+      });
+    });
+    mm.add("(min-width: 991px)", () => {
+      gsap.fromTo('.projects .card:nth-child(5)',
+        { y: 119 }, {
+        y: -72,
+        scrollTrigger: {
+          trigger: '.projects .card:nth-child(5)',
+          duration: 0.8,
+          start: '19% bottom',
           end: 'bottom top',
           scrub: true,
         }

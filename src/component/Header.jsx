@@ -41,6 +41,7 @@ const Header = () => {
                         <li>
                             <a href="#projects" onClick={()=> setCrossMenu(!crossMenu)} className="menu-btn">Projects</a>
                         </li>
+                        <div className="overlay" onClick={()=> setCrossMenu(!crossMenu)}></div>
                     </ul>
                     <div className="menu-btn">
                         {/* <i> */}
