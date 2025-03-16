@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-This repository contains the source code and files for my personal portfolio website. The website is built using React, CSS, and GSAP.
+This repository contains the source code and files for my personal portfolio web app. The website is built in React, CSS, and GSAP with device compatibility.
 
 ## Description
 
@@ -8,9 +8,9 @@ The personal portfolio website showcases my skills, projects, and experiences as
 
 ## Features
 
-- Home: Introduces myself and provides a brief overview of my skills and interests.
+- Home: Introduces myself and provides a brief overview.
 - About: Details my professional background, education, and relevant experience.
-- Projects: Showcases the projects I have worked on, including descriptions, screenshots, and links to live demos or repositories.
+- Projects: Showcases the projects I have worked on, including descriptions, screenshots, and links to visit or repositories.
 - Skills: Lists the programming languages, frameworks, and tools I am proficient in.
 - Contact: Offers various ways to get in touch with me, such as through email, social media.
 
@@ -26,7 +26,7 @@ To view the website locally or make modifications, follow these steps:
 
 1. Clone the repository: `git clone [repository URL]`
 2. Open the project folder in your preferred code editor.
-3. Open the `index.html` file in a web browser to view the website.
+3. Open terminal and run `npm run dev` to view the website.
 
 ## Contributing
 
