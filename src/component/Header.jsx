@@ -21,7 +21,7 @@ const Header = () => {
             <nav className={headerBg ? "navbar sticky" : "navbar"}>
                 <div className="max_width">
                     <div className="logo logo_mobile">
-                        <a href="#">H<span>Vv.</span>
+                        <a href="#">H<span>V.</span>
                         </a>
                     </div>
                     <ul className={!crossMenu ? "menu": "menu active"}>

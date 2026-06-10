@@ -233,7 +233,8 @@ body {
     transition: opacity 0.1s ease;
     opacity: 1 !important;
 }
-.overlay{
+
+.overlay {
     display: none;
 }
 
@@ -656,6 +657,7 @@ section .title::after {
     text-align: justify;
     line-height: 1.6;
     letter-spacing: 1px;
+    margin-bottom: 12px;
 }
 
 .skills .skills-content .left a {
@@ -1239,7 +1241,8 @@ footer span a {
         height: auto;
         width: 100%;
     }
-    .skills .skills-content{
+
+    .skills .skills-content {
         flex-direction: column-reverse;
     }
 
@@ -1339,5 +1342,12 @@ footer span a {
     .about .about-content .left img {
         height: 250px;
         width: 250px;
+    }
+}
+
+@media (max-width: 339px) {
+    section.projects .title::after {
+        bottom: -11px;
+        font-size: 17px;
     }
 }

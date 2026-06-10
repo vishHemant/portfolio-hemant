@@ -2,7 +2,7 @@ import React from 'react'
 import hemant_profile from '../assets/images/hemant_profile.jpg'
 import TypingAnimation from './TypingAnimation'
 
-const AboutMe = ({about}) => {
+const AboutMe = ({ about }) => {
 
 
     return (
@@ -11,17 +11,27 @@ const AboutMe = ({about}) => {
                 <h2 className="title">About me</h2>
                 <div className="about-content">
                     <div className="column left">
-                        <img src={hemant_profile} alt="Hemant Vishwakarma" />
+                        <img loading='lazy' src={hemant_profile} alt="Hemant Vishwakarma" />
                     </div>
                     <div className="column right">
                         <div className="text">I'm Hemant and I'm a <TypingAnimation /></div>
-                        <p>I am currently employed as a Frontend Developer at Website India Developer.
-                            I have completed an Integrated BCA at ICST (Shepa), Varanasi.</p>
-                        <p>As a dedicated front-end developer, I focus on creating visually appealing and user-friendly websites.
-                            I am passionate about transforming design concepts into interactive digital experiences and
-                            continuously enhancing my skills to stay updated with the latest industry trends.
-                            My portfolio showcases a variety of projects that highlight my ability to build responsive
-                            and dynamic web applications.</p>
+                        <p>
+                            I am a Frontend Developer with 4 years of professional experience at Website India Developer.
+                            I have completed an Integrated BCA from ICST (Shepa), Varanasi.
+                        </p>
+
+                        <p>
+                            Over the past 4 years, I have worked on building scalable and high-performance web applications.
+                            I started with 2 years of core frontend development using HTML, CSS, and JavaScript, and then
+                            advanced into 2 years of working with React and TypeScript for building modern, component-driven applications.
+                        </p>
+
+                        <p>
+                            My experience also includes integrating RESTful APIs, handling asynchronous data flow, and building
+                            dynamic, data-driven interfaces. I focus on performance optimization, improving load times,
+                            code efficiency, and delivering smooth user experiences across devices and browsers.
+                        </p>
+
                         <p>Apart from coding, some other activities that I love to do!</p>
                         <ul>
                             <li>
@@ -32,10 +42,10 @@ const AboutMe = ({about}) => {
                                 Listening to and singing songs
                             </li>
                             <li><svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 15h2.5c0.827 0 1.5-0.673 1.5-1.5 0-0.267-0.070-0.518-0.193-0.736 0.417-0.267 0.693-0.734 0.693-1.264 0-0.384-0.145-0.734-0.383-1 0.238-0.266 0.383-0.616 0.383-1 0-0.175-0.030-0.344-0.086-0.5h3.586c0.827 0 1.5-0.673 1.5-1.5s-0.673-1.5-1.5-1.5h-6.167l1.466-2.75c0.131-0.227 0.201-0.486 0.201-0.75 0-0.827-0.673-1.5-1.5-1.5-0.412 0-0.796 0.164-1.082 0.461-0.004 0.004-0.007 0.008-0.011 0.012l-3.407 3.737v-0.71c0-0.276-0.224-0.5-0.5-0.5h-3c-0.276 0-0.5 0.224-0.5 0.5v10c0 0.276 0.224 0.5 0.5 0.5h3c0.276 0 0.5-0.224 0.5-0.5v-0.691l2.276 1.138c0.069 0.035 0.146 0.053 0.224 0.053zM2.5 14c-0.276 0-0.5-0.224-0.5-0.5s0.224-0.5 0.5-0.5 0.5 0.224 0.5 0.5-0.224 0.5-0.5 0.5zM6.618 14l-2.618-1.309v-5.997l4.143-4.544c0.095-0.097 0.221-0.15 0.357-0.15 0.276 0 0.5 0.224 0.5 0.5 0 0.085-0.020 0.166-0.061 0.239-0.005 0.008-0.010 0.017-0.014 0.025l-1.866 3.5c-0.083 0.155-0.078 0.342 0.013 0.492s0.253 0.243 0.429 0.243h7c0.276 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5h-5c-0.276 0-0.5 0.224-0.5 0.5s0.224 0.5 0.5 0.5c0.276 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5c-0.276 0-0.5 0.224-0.5 0.5s0.224 0.5 0.5 0.5c0.276 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5h-0.5c-0.276 0-0.5 0.224-0.5 0.5s0.224 0.5 0.5 0.5c0.276 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5h-2.382z"></path></svg>
-                                Artist
+                                Creating and exploring digital art
                             </li>
                             <li><svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 15h2.5c0.827 0 1.5-0.673 1.5-1.5 0-0.267-0.070-0.518-0.193-0.736 0.417-0.267 0.693-0.734 0.693-1.264 0-0.384-0.145-0.734-0.383-1 0.238-0.266 0.383-0.616 0.383-1 0-0.175-0.030-0.344-0.086-0.5h3.586c0.827 0 1.5-0.673 1.5-1.5s-0.673-1.5-1.5-1.5h-6.167l1.466-2.75c0.131-0.227 0.201-0.486 0.201-0.75 0-0.827-0.673-1.5-1.5-1.5-0.412 0-0.796 0.164-1.082 0.461-0.004 0.004-0.007 0.008-0.011 0.012l-3.407 3.737v-0.71c0-0.276-0.224-0.5-0.5-0.5h-3c-0.276 0-0.5 0.224-0.5 0.5v10c0 0.276 0.224 0.5 0.5 0.5h3c0.276 0 0.5-0.224 0.5-0.5v-0.691l2.276 1.138c0.069 0.035 0.146 0.053 0.224 0.053zM2.5 14c-0.276 0-0.5-0.224-0.5-0.5s0.224-0.5 0.5-0.5 0.5 0.224 0.5 0.5-0.224 0.5-0.5 0.5zM6.618 14l-2.618-1.309v-5.997l4.143-4.544c0.095-0.097 0.221-0.15 0.357-0.15 0.276 0 0.5 0.224 0.5 0.5 0 0.085-0.020 0.166-0.061 0.239-0.005 0.008-0.010 0.017-0.014 0.025l-1.866 3.5c-0.083 0.155-0.078 0.342 0.013 0.492s0.253 0.243 0.429 0.243h7c0.276 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5h-5c-0.276 0-0.5 0.224-0.5 0.5s0.224 0.5 0.5 0.5c0.276 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5c-0.276 0-0.5 0.224-0.5 0.5s0.224 0.5 0.5 0.5c0.276 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5h-0.5c-0.276 0-0.5 0.224-0.5 0.5s0.224 0.5 0.5 0.5c0.276 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5h-2.382z"></path></svg>
-                                Travelling
+                                Travelling and exploring new places
                             </li>
                         </ul>
                     </div>

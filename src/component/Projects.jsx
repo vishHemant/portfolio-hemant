@@ -10,6 +10,7 @@ import thegsf from '../assets/images/projects_img/thegsf.png'
 import wallop from '../assets/images/projects_img/wallop.png'
 import leaninworld from '../assets/images/projects_img/leaninworld.png'
 import movecentral from '../assets/images/projects_img/movecentral.png'
+import cityCards from '../assets/images/projects_img/citycards.png'
 
 
 
@@ -21,6 +22,13 @@ const Projects = ({ projects }) => {
 
 
     const cardsArray = [
+        {
+            link: 'https://website-uat.citycard.betadelivery.com/',
+            img: cityCards,
+            title: 'CityCards Customer Web',
+            middleTitle: 'React | Radix UI | Tailwind CSS | API Integration | Stripe Payment Gateway Integration',
+            subTitle: 'CityCards is a travel and attractions booking platform that offers flexible pass options, such as Flexi and Unlimited cards, allowing users to conveniently access and explore multiple destinations through a single purchase.'
+        },
         {
             link: 'https://regroupweb.betadelivery.com/',
             img: regroup,
@@ -113,7 +121,7 @@ const Projects = ({ projects }) => {
                     {cardsArray?.slice(0, viewMore ? cardsArray?.length : 6)?.map(({ link, img, title, middleTitle, subTitle }, index) =>
                         <div className="card" key={index}>
                             <div className="box">
-                                <img src={img} alt="Pokemon" />
+                                <img loading='lazy' src={img} alt="Pokemon" />
                             </div>
                             <div className="card_content">
                                 <h4>{title}</h4>

@@ -23,53 +23,63 @@ const Skills = ({ skills }) => {
                 <div className="skills-content">
                     <div className="column left">
                         <div className="text">My creative skills & experiences</div>
-                        <p>I am a Frontend Developer with a passion for learning and the ability to estimate future tasks. I am highly motivated, result-oriented, self-driven, and hard-working. As a fast learner, I am constantly seeking to improve my skills and stay up to date with the latest front-end development tools.
-                            <br /> I have a strong knowledge of JavaScript, React.js, TypeScript, Redux Toolkit, HTML5, CSS3, Tailwind CSS, Bootstrap, Chakra UI, SASS/SCSS, Material UI, React Testing Library, ApexCharts, REST API, Axios, NPM, and Git. Additionally, I am proficient in design tools such as Photopea and Figma. I also have a solid understanding of various computer software packages, frameworks, and tools used in modern technology.
+                        <p>
+                            I am a highly motivated Frontend Developer with 4 years of experience building scalable and responsive web applications.
+                            I am a fast learner, result-oriented, and passionate about improving performance, usability, and modern UI development.
+                        </p>
+
+                        <p>
+                            My core skills include JavaScript, React.js, TypeScript, Redux Toolkit, HTML5, CSS3, Tailwind CSS, Bootstrap, SASS/SCSS, Material UI, Chakra UI,
+                            along with experience in REST APIs, Axios, React Testing Library, ApexCharts, NPM, and Git.
+                        </p>
+
+                        <p>
+                            I also work with design tools like Figma and Photopea, and focus on writing clean, maintainable code while continuously upgrading my skills with modern frontend technologies and best practices.
                         </p>
                     </div>
                     <div className="column right">
                         <div className="info">
                             <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-                                <img src={javascript} alt="javascript" />
+                                <img loading='lazy' src={javascript} alt="javascript" />
                             </a>
                             <a href="https://reactjs.org/" target="_blank">
-                                <img src={react} alt="react.js" />
+                                <img loading='lazy' src={react} alt="react.js" />
                             </a>
                             <a href="https://mui.com/material-ui/getting-started/" target="_blank">
-                                <img src={MUIIcon} alt="MUI Material" />
+                                <img loading='lazy' src={MUIIcon} alt="MUI Material" />
                             </a>
                             <a href="https://www.typescriptlang.org/" target="_blank">
-                                <img src={typescript} alt="typeScript" />
+                                <img loading='lazy' src={typescript} alt="typeScript" />
                             </a>
                             <a href="https://redux.js.org" target="_blank">
-                                <img src={redux} alt="redux" />
+                                <img loading='lazy' src={redux} alt="redux" />
                             </a>
                             <a href="https://www.w3.org/html/" target="_blank">
-                                <img src={html5} alt="html5" />
+                                <img loading='lazy' src={html5} alt="html5" />
                             </a>
                             <a href="https://www.w3schools.com/css/" target="_blank">
-                                <img src={css3} alt="css3" />
+                                <img loading='lazy' src={css3} alt="css3" />
                             </a>
                             <a href="https://getbootstrap.com" target="_blank">
-                                <img src={bootstrap} alt="bootstrap" />
+                                <img loading='lazy' src={bootstrap} alt="bootstrap" />
                             </a>
                             <a href="https://chakra-ui.com/" target="_blank">
-                                <img src={chakraUI} alt="chakraUI" />
+                                <img loading='lazy' src={chakraUI} alt="chakraUI" />
                             </a>
                             <a href="https://www.photopea.com/" target="_blank">
-                                <img src={photopea} alt="photopea" />
+                                <img loading='lazy' src={photopea} alt="photopea" />
                             </a>
                             <a href="https://sass-lang.com" target="_blank">
-                                <img src={sass} alt="sass" />
+                                <img loading='lazy' src={sass} alt="sass" />
                             </a>
                             <a href="https://tailwindcss.com/" target="_blank">
-                                <img src={tailwindCss} alt="react" />
+                                <img loading='lazy' src={tailwindCss} alt="react" />
                             </a>
                             <a href="https://git-scm.com/" target="_blank">
-                                <img src={git} alt="git" />
+                                <img loading='lazy' src={git} alt="git" />
                             </a>
                             <a href="https://www.postman.com/" target="_blank">
-                                <img src={postman} alt="postman" />
+                                <img loading='lazy' src={postman} alt="postman" />
                             </a>
                         </div>
                     </div>

@@ -1,39 +1,44 @@
-# Personal Portfolio Website
+# Hemant's React Portfolio
 
-This repository contains the source code and files for my personal portfolio web app. The website is built in React, CSS, and GSAP with device compatibility.
+This repository contains the source code for my personal portfolio website built with React, Vite, GSAP, and modern CSS animations.
 
 ## Description
 
-The personal portfolio website showcases my skills, projects, and experiences as a Frontend developer. It serves as an online platform to highlight my work and provide information about my background and expertise.
+The portfolio site showcases my skills, projects, and development experience as a frontend developer. It includes sections for an introduction, about me, project highlights, technical skills, and contact details.
 
 ## Features
 
-- Home: Introduces myself and provides a brief overview.
-- About: Details my professional background, education, and relevant experience.
-- Projects: Showcases the projects I have worked on, including descriptions, screenshots, and links to visit or repositories.
-- Skills: Lists the programming languages, frameworks, and tools I am proficient in.
-- Contact: Offers various ways to get in touch with me, such as through email, social media.
+- Home: Animated landing section with typing and custom cursor effects.
+- About: Personal background, skills, and strengths.
+- Projects: Display of web projects with descriptions and links.
+- Skills: Technology stack and tool proficiency.
+- Contact: A contact section to connect via email or socials.
 
 ## Technologies Used
 
-- React: JS library used for created complex UI easily.
-- CSS: Stylesheet language used for designing and formatting the website.
-- GSAP: Also, a library using for animation and user friendly.
+- React 19: UI library for building the application.
+- Vite: Fast development server and build tool.
+- GSAP: Animation library used for motion effects.
+- React Typed: Typing animation component.
+- CSS: Styling and responsive design.
 
 ## Getting Started
 
-To view the website locally or make modifications, follow these steps:
+To run the website locally:
 
 1. Clone the repository: `git clone [repository URL]`
-2. Open the project folder in your preferred code editor.
-3. Open terminal and run `npm run dev` to view the website.
+2. Open the project folder in your code editor.
+3. Install dependencies: `npm install`
+4. Start the development server: `npm run dev`
+
+Then open the local URL shown in the terminal.
 
 ## Contributing
 
-I appreciate any suggestions, feedback, or contributions to enhance this personal portfolio website. 
+If you have suggestions or improvements, feel free to open an issue or submit a pull request. Contributions are welcome.
 
 ## Contact
 
-If you have any questions or inquiries, please feel free to reach out to me through the contact information provided in the website or by using the contact form.
+Use the contact section of the website to reach out via email or social links.
 
-Thank you for visiting my personal portfolio repository! I hope you find it informative and visually appealing.
+Thank you for checking out my portfolio!
