@@ -6,7 +6,7 @@ const TypingAnimation = () => {
 
     useEffect(() => {
         const typed = new Typed(typedRef.current, {
-            strings: ["Front End Developer", "React.js Developer", "Web Developer"],
+            strings: ["Frontend Developer", "React.js Developer", "Next.js Developer", "TypeScript Developer"],
             typeSpeed: 100,
             backSpeed: 60,
             loop: true,

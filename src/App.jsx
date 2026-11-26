@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import Header from './component/Header'
 import Home from './component/Home'
 import AboutMe from './component/AboutMe'
+import Experience from './component/Experience'
 import Skills from './component/Skills'
 import Projects from './component/Projects'
 import Contact from './component/Contact'
@@ -47,7 +48,7 @@ const App = () => {
 
   // ================= GSAP ==================
 
-  const { home, about, skills, projects, contact } = useRef();
+  const { home, about, experience, skills, projects, contact } = useRef();
 
 
 
@@ -169,6 +170,85 @@ const App = () => {
         });
     });
 
+
+    mm.add("(min-width: 991px)", () => {
+      gsap.from('.experience .title', {
+        scale: 2,
+        x: 500,
+        y: -150,
+        scrollTrigger: {
+          trigger: '.experience .title',
+          duration: 0.3,
+          start: '50% bottom',
+          end: 'bottom top',
+          scrub: true,
+        },
+      });
+    });
+
+    // Experience timeline scroll animations (all devices)
+    gsap.from('.experience-line', {
+      scaleY: 0,
+      duration: 1.1,
+      ease: 'power2.out',
+      scrollTrigger: {
+        trigger: '.experience-timeline',
+        start: 'top 80%',
+        toggleActions: 'play none none reverse',
+      },
+    });
+
+    gsap.from('.experience-item', {
+      x: -50,
+      opacity: 0,
+      duration: 0.75,
+      stagger: 0.22,
+      ease: 'power2.out',
+      scrollTrigger: {
+        trigger: '.experience-timeline',
+        start: 'top 78%',
+        toggleActions: 'play none none reverse',
+      },
+    });
+
+    gsap.from('.experience-dot', {
+      scale: 0,
+      opacity: 0,
+      duration: 0.45,
+      stagger: 0.22,
+      ease: 'back.out(1.7)',
+      scrollTrigger: {
+        trigger: '.experience-timeline',
+        start: 'top 78%',
+        toggleActions: 'play none none reverse',
+      },
+    });
+
+    gsap.from('.experience-body li', {
+      x: 24,
+      opacity: 0,
+      duration: 0.45,
+      stagger: 0.06,
+      ease: 'power1.out',
+      scrollTrigger: {
+        trigger: '.experience-timeline',
+        start: 'top 70%',
+        toggleActions: 'play none none reverse',
+      },
+    });
+
+    gsap.from('.experience-extras > *', {
+      y: 40,
+      opacity: 0,
+      duration: 0.7,
+      stagger: 0.15,
+      ease: 'power2.out',
+      scrollTrigger: {
+        trigger: '.experience-extras',
+        start: 'top 85%',
+        toggleActions: 'play none none reverse',
+      },
+    });
 
     mm.add("(min-width: 991px)", () => {
       gsap.from('.skills .title', {
@@ -304,8 +384,112 @@ const App = () => {
       });
     });
 
+    // Contact section scroll animations (all devices)
+    gsap.from('.contact-kicker', {
+      y: 24,
+      opacity: 0,
+      duration: 0.55,
+      ease: 'power2.out',
+      scrollTrigger: {
+        trigger: '.contact-panel',
+        start: 'top 80%',
+        toggleActions: 'play none none reverse',
+      },
+    });
 
-  }, { scope: home, about, skills, projects, contact });
+    gsap.from('.contact-headline', {
+      y: 40,
+      opacity: 0,
+      duration: 0.75,
+      delay: 0.08,
+      ease: 'power2.out',
+      scrollTrigger: {
+        trigger: '.contact-panel',
+        start: 'top 80%',
+        toggleActions: 'play none none reverse',
+      },
+    });
+
+    gsap.from('.contact-copy', {
+      y: 30,
+      opacity: 0,
+      duration: 0.65,
+      delay: 0.14,
+      ease: 'power2.out',
+      scrollTrigger: {
+        trigger: '.contact-panel',
+        start: 'top 80%',
+        toggleActions: 'play none none reverse',
+      },
+    });
+
+    gsap.from('.contact-email', {
+      y: 28,
+      opacity: 0,
+      duration: 0.7,
+      delay: 0.2,
+      ease: 'power2.out',
+      scrollTrigger: {
+        trigger: '.contact-panel',
+        start: 'top 80%',
+        toggleActions: 'play none none reverse',
+      },
+    });
+
+    gsap.from('.contact-meta', {
+      y: 20,
+      opacity: 0,
+      duration: 0.55,
+      delay: 0.26,
+      ease: 'power2.out',
+      scrollTrigger: {
+        trigger: '.contact-panel',
+        start: 'top 80%',
+        toggleActions: 'play none none reverse',
+      },
+    });
+
+    gsap.from('.contact .contact_cta', {
+      y: 24,
+      opacity: 0,
+      duration: 0.6,
+      delay: 0.32,
+      ease: 'power2.out',
+      scrollTrigger: {
+        trigger: '.contact-panel',
+        start: 'top 80%',
+        toggleActions: 'play none none reverse',
+      },
+    });
+
+    gsap.from('.contact-panel-side', {
+      x: 50,
+      opacity: 0,
+      duration: 0.8,
+      ease: 'power2.out',
+      scrollTrigger: {
+        trigger: '.contact-panel',
+        start: 'top 78%',
+        toggleActions: 'play none none reverse',
+      },
+    });
+
+    gsap.from('.contact-social-btn', {
+      y: 24,
+      opacity: 0,
+      duration: 0.55,
+      stagger: 0.12,
+      ease: 'power2.out',
+      clearProps: 'transform',
+      scrollTrigger: {
+        trigger: '.contact-socials',
+        start: 'top 85%',
+        toggleActions: 'play none none reverse',
+      },
+    });
+
+
+  }, { scope: home, about, experience, skills, projects, contact });
 
 
 
@@ -326,6 +510,7 @@ const App = () => {
       <Header />
       <Home home={home} />
       <AboutMe about={about} />
+      <Experience experience={experience} />
       <Skills skills={skills} />
       <Projects projects={projects} />
       <Contact contact={contact} />
