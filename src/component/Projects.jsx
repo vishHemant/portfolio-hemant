@@ -25,23 +25,23 @@ const Projects = ({ projects }) => {
         {
             link: 'https://website-uat.citycard.betadelivery.com/',
             img: cityCards,
-            title: 'CityCards Customer Web',
-            middleTitle: 'React | Radix UI | Tailwind CSS | API Integration | Stripe Payment Gateway Integration',
-            subTitle: 'CityCards is a travel and attractions booking platform that offers flexible pass options, such as Flexi and Unlimited cards, allowing users to conveniently access and explore multiple destinations through a single purchase.'
+            title: 'CityCards — Travel Platform',
+            middleTitle: 'React | TypeScript | RTK Query | Radix UI | Stripe Checkout',
+            subTitle: '3-role travel platform (customer, partner, admin) with booking and listing modules, typed API contracts, role-based access control, and Stripe Checkout for secure online payments.'
         },
         {
             link: 'https://regroupweb.betadelivery.com/',
             img: regroup,
-            title: 'Regroup',
-            middleTitle: 'React | Chakra UI | CSS | API Integration',
-            subTitle: 'This web app is inspired by another social media web apps but different it is a particular community, group and subgroup in which we can like, comment, sent post etc.'
+            title: 'Regroup — Social Platform',
+            middleTitle: 'React | TypeScript | RTK Query | Chakra UI | Socket.io',
+            subTitle: 'Social platform for communities, groups, posts, and events with real-time 1:1 chat via Socket.io, RTK Query caching, and calendar scheduling with React Big Calendar.'
         },
         {
             link: 'https://admin.regroupweb.betadelivery.com/',
             img: regroupadmin,
             title: 'Regroup Admin Dashboard',
-            middleTitle: 'React + Typescript | Chakra UI | CSS | API Integration',
-            subTitle: 'This is sports man activity checker dashboard is managed by owner. In which owner managed the user data like delete, update etc.'
+            middleTitle: 'React | TypeScript | RTK Query | Chakra UI',
+            subTitle: 'Admin dashboard for user, content, and community management with efficient server-state handling through RTK Query.'
         },
         {
             link: 'https://vishhemant.github.io/pokemon',

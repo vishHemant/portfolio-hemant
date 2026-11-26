@@ -1,68 +1,80 @@
 import React from 'react'
 
-const Contact = ({contact}) => {
+const socialLinks = [
+    {
+        label: 'LinkedIn',
+        href: 'https://www.linkedin.com/in/hemant-vishwakarma-36a879239/',
+        icon: 'fab fa-linkedin-in',
+    },
+    {
+        label: 'Twitter',
+        href: 'https://x.com/Hemant12081?s=09',
+        icon: 'fab fa-twitter',
+    },
+    {
+        label: 'Github',
+        href: 'https://github.com/vishHemant',
+        icon: 'fab fa-github',
+    },
+]
+
+const Contact = ({ contact }) => {
     return (
-        <section class="contact" id="contact" ref={contact}>
-            <div class="max_width">
-                <h2 class="title">Contact me</h2>
-                <div class="contact-content">
-                    <div class="column left">
-                        <div class="text">Reach Out to me!</div>
-                        {/* <p>Discuss a Project or just want to say Hi? My inbox is open for all.</p> */}
-                        <div class="icons">
-                            <div class="row">
-                                <i class="fas fa-user"></i>
-                                <div class="info">
-                                    <div class="head">Name</div>
-                                    <div class="sub-title">Hemant Vishwakarma</div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div class="info">
-                                    <div class="head">Address</div>
-                                    <div class="sub-title">Mumbai, India</div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <i class="fas fa-envelope email-icon"></i>
-                                <div class="info">
-                                    <div class="head">Email</div>
-                                    <div class="sub-title"><a href="mailto:vishhemant08@gmail.com"
-                                        target="_blank">vishhemant08@gmail.com</a></div>
-                                </div>
-                            </div>
+        <section className="contact" id="contact" ref={contact}>
+            <div className="max_width">
+                <h2 className="title">Contact me</h2>
+
+                <div className="contact-panel">
+                    <div className="contact-panel-main">
+                        <p className="contact-kicker">Available for work</p>
+                        <h3 className="contact-headline">
+                            Let’s build something<br />worth shipping.
+                        </h3>
+                        <p className="contact-copy">
+                            Open to frontend roles, freelance projects, and collaboration.
+                            Prefer email — I usually reply within a day.
+                        </p>
+
+                        <a className="contact-email" href="mailto:vishhemant08@gmail.com">
+                            vishhemant08@gmail.com
+                        </a>
+
+                        <div className="contact-meta">
+                            <span>Hemant Vishwakarma</span>
+                            <span className="contact-meta-dot"></span>
+                            <span>Mumbai, India</span>
                         </div>
 
+                        <div className="lets_talk contact_cta">
+                            <a href="mailto:vishhemant08@gmail.com">
+                                <span className="one"></span>
+                                <span className="two"></span>
+                                Say Hello
+                            </a>
+                        </div>
                     </div>
-                    <div className="column right">
 
-                        <div class="text">Stay Connected</div>
+                    <div className="contact-panel-side">
+                        <div className="contact-side-label">Stay connected</div>
+                        <p className="contact-social-copy">
+                            Follow along for project updates and conversations.
+                        </p>
 
-                        <div className="btn_main">
-                            <div class="icon_button">
-                                <div class="icon">
-                                    <a href="https://www.linkedin.com/in/hemant-vishwakarma-36a879239/" target="_blank" y>
-                                    <i class="fab fa-linkedin-in"></i>
-                                    </a></div><a href="https://www.linkedin.com/in/hemant-vishwakarma-36a879239/" target="_blank" y>
-                                    <span>LinkedIn </span></a>
-                            </div>
-                            <div className="btn_second">
-                                <div class="icon_button">
-                                    <div class="icon">
-                                        <a href="https://x.com/Hemant12081?s=09" target="_blank" y>
-                                            <i class="fab fa-twitter"></i>
-                                        </a></div><a href="https://x.com/Hemant12081?s=09" target="_blank" y>
-                                        <span>Twitter </span></a>
-                                </div>
-                            </div>
-                            <div class="icon_button">
-                                <div class="icon">
-                                    <a href="https://github.com/vishHemant" target="_blank" y>
-                                        <i class="fab fa-github"></i>
-                                    </a></div><a href="https://github.com/vishHemant" target="_blank" y>
-                                    <span>Github </span></a>
-                            </div>
+                        <div className="contact-socials">
+                            {socialLinks.map((item) => (
+                                <a
+                                    className="contact-social-btn"
+                                    href={item.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    key={item.label}
+                                >
+                                    <span className="contact-social-btn-icon">
+                                        <i className={item.icon}></i>
+                                    </span>
+                                    <span className="contact-social-btn-label">{item.label}</span>
+                                </a>
+                            ))}
                         </div>
                     </div>
                 </div>
