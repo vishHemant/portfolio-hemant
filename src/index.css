@@ -1365,8 +1365,48 @@ footer span a {
     animation: drop 6s ease-in-out infinite;
 }
 
+.scroll_down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 28px;
+    color: #fff;
+    text-decoration: none;
+}
 
+.scroll_down_arrows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    animation: scroll-arrow 1.6s ease-in-out infinite;
+}
 
+.scroll_down_arrow {
+    width: 12px;
+    height: 12px;
+    border-right: 2px solid #67ccff;
+    border-bottom: 2px solid #fc4646;
+    transform: rotate(45deg);
+}
+
+.scroll_down_arrow:last-child {
+    margin-top: -6px;
+    opacity: 0.55;
+}
+
+@keyframes scroll-arrow {
+    0%,
+    100% {
+        transform: translateY(0);
+        opacity: 0.55;
+    }
+
+    50% {
+        transform: translateY(8px);
+        opacity: 1;
+    }
+}
 
 /* home bubble  */
 
