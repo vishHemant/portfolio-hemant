@@ -1,5 +1,4 @@
 import React from 'react'
-import arrowUpRight from '../assets/images/arrow-up-right.webp'
 import TypingAnimation from './TypingAnimation'
 
 
@@ -27,6 +26,13 @@ const Home = ({ home }) => {
                             <div className="bubble3"></div>
                         </a>
                     </div>
+
+                    <a href="#about" className="scroll_down" aria-label="Scroll to about section">
+                        <span className="scroll_down_arrows">
+                            <span className="scroll_down_arrow"></span>
+                            <span className="scroll_down_arrow"></span>
+                        </span>
+                    </a>
 
                 </div>
             </div>
